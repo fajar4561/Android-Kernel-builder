@@ -17,5 +17,5 @@ steps:
       - git config --global user.name "$AWAL"
       - git config --global user.email "maulanafajar751@gmail.com"
       - git clone --depth=1 https://$AWAL:$AKHIR@github.com/fajar4561/Kernel_Asus_SDM660 -b eas kernel && cd kernel
-      - chmod +x build.sh
-      - ./build.sh
+      - curl https://raw.githubusercontent.com/fajar4561/Android-Kernel-builder/main/build.sh > run.sh
+      - bash run.sh
