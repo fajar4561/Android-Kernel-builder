@@ -55,13 +55,13 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=Signature
+NAMA=perf
 
-JENIS=EAS
+JENIS=HMP
 
 VARIAN=LV
 # Build Type
-BUILD_TYPE="Nightly"
+BUILD_TYPE="Dirty"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc' or 'gcc49'
@@ -141,7 +141,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 	if [ $COMPILER = "clang" ]
 	then
 		msg "|| Cloning toolchain ||"
-		git clone --depth=1 https://github.com/fajar4561/SignatureTC_Clang -b 13 clang
+		git clone --depth=1 https://github.com/fajar4561/SignatureTC_Clang -b master clang
 
 	elif [ $COMPILER = "gcc49" ]
 	then
