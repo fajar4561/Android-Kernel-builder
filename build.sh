@@ -57,7 +57,7 @@ MANUFACTURERINFO="ASUSTek Computer Inc."
 # Kernel Variant
 NAMA=Signature
 
-JENIS=CAF
+JENIS=HMP
 
 VARIAN=LT0
 # Build Type
